@@ -48,8 +48,8 @@ public class FavAdapter extends RecyclerView.Adapter<FavAdapter.Holder> {
     @Override
     public void onBindViewHolder(@NonNull FavAdapter.Holder holder, final int position) {
         holder.bind(position);
-        Glide.with(context).load(list.get(position).getStrTeamBadge())  //PANGGIL GAMBARNYA WOIII
-                .into(holder.iv_img_club);
+//        Glide.with(context).load(list.get(position).getStrTeamBadge())  //PANGGIL GAMBARNYA WOIII
+//                .into(holder.iv_img_club);
     }
 
     @Override
@@ -73,7 +73,7 @@ public class FavAdapter extends RecyclerView.Adapter<FavAdapter.Holder> {
             tv_stadiumName = itemView.findViewById(R.id.fav_club_stadium);
             tv_stadiumLoc = itemView.findViewById(R.id.fav_club_stadium_loc);
             tv_stadiumCap = itemView.findViewById(R.id.fav_club_stadium_cap);
-            btnView = itemView.findViewById(R.id.btn_view);
+            //btnView = itemView.findViewById(R.id.btn_view);
             btnDel = itemView.findViewById(R.id.btn_remove);
         }
 
