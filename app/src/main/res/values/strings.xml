@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SportFootball</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="deskripsi">ArsenaL</string>
+    <string name="stadium">Emirates Stadium</string>
+
+    <string-array name="seasons">
+        <item>Seasons 2017/2018</item>
+        <item>Seasons 2019/2020</item>
+    </string-array>
+
+</resources>

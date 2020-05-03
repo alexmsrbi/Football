@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_home_deskrpsi"
+        android:title="Deskripsi"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_home_match"
+        android:title="Match"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/menu_home_standing"
+        android:title="Standing"
+        app:showAsAction="ifRoom"
+        />
+</menu>

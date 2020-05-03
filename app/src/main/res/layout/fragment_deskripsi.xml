@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".View.Fragment.HomeFragment.FragmentDeskripsi">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FOUNDED"
+        android:textAlignment="center"
+        android:textColor="#FFB300"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="20 February 1992"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:fontFamily="@font/margarine" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+        android:layout_margin="15dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="The Premier League, often referred to as the English Premier League or the EPL outside England, is the top level of the English football league system. Contested by 20 clubs, it operates on a system of promotion and relegation with the English Football League (EFL). Seasons run from August to May with each team playing 38 matches (playing all 19 other teams both home and away).Most games are played on Saturday and Sunday afternoons."
+        android:textAlignment="center"
+        android:fontFamily="@font/adamina"
+        android:layout_marginTop="10dp"
+        android:textSize="13sp"/>
+   </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="7dp"
+    android:id="@+id/cv_event"
+
+    android:layout_marginTop="30dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+
+            android:id="@+id/tv_team1_eventlist"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/margarine"
+            android:gravity="center"
+            android:text="Liverpool"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_vs"
+            android:layout_width="40dp"
+            android:layout_toRightOf="@id/tv_team1_eventlist"
+            android:layout_height="60dp"
+            android:text="VS"
+            android:gravity="center"
+            android:fontFamily="@font/atomic_age" />
+
+        <TextView
+            android:id="@+id/tv_team2_eventlist"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@id/tv_vs"
+            android:fontFamily="@font/margarine"
+            android:gravity="center"
+            android:text="Man City"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/tv_vs"
+            android:fontFamily="@font/margarine"
+            android:gravity="center"
+            android:textColor="#E53935"
+            android:textStyle="bold"
+            android:text="04/04/2020" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_tanggal"
+            android:fontFamily="@font/margarine"
+            android:gravity="center"
+            android:textColor="#E53935"
+            android:textStyle="bold"
+            android:text="14:00:00" />
+
+        <Button
+            android:id="@+id/btn_event_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E53935"
+            android:hint="SHARE"
+            android:textStyle="bold"
+            android:fontFamily="@font/atomic_age"
+            android:textColorHint="#ffffff"
+            android:layout_margin="10dp"
+            android:layout_below="@id/tv_time"
+            android:freezesText="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

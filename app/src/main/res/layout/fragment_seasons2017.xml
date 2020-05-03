@@ -1,0 +1,86 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="55dp"
+    android:stretchColumns="1"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".View.Fragment.HomeFragment.Table.Seasons2017">
+
+    <TableRow android:layout_width="184dp" android:background="#FFEB3B">
+
+        <TextView
+            android:layout_width="35dp"
+            android:fontFamily="@font/adamina"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Teams"
+            android:textSize="10sp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/adamina"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="W"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:fontFamily="@font/adamina"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="D"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:fontFamily="@font/adamina"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="L"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:fontFamily="@font/adamina"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:text="GD"
+            android:padding="10dp"
+            android:fontFamily="@font/adamina"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="Pt"
+            android:textStyle="bold"
+            android:fontFamily="@font/adamina"
+            android:padding="10dp"
+            android:textAlignment="center" />
+    </TableRow>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_table_football2017"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_list_standings" />
+
+</TableLayout>
+
