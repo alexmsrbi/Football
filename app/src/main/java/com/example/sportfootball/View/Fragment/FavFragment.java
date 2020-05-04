@@ -16,6 +16,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -53,7 +54,9 @@ public class FavFragment extends Fragment implements MainContact.delete {
         super.onViewCreated(view, savedInstanceState);
         recyclerView = view.findViewById(R.id.fragmentfav_rv);
         presenterDao = new PresenterDao(this);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(new LinearLayoutManager(context));
+        recyclerView.addItemDecoration(new DividerItemDecoration(recyclerView.getContext(), layoutManager.getOrientation()));
         appDatabase = AppDatabase.iniDb(getContext());
         readData(appDatabase);
     }

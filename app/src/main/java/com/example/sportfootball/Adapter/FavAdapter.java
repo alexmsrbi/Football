@@ -1,6 +1,9 @@
 package com.example.sportfootball.Adapter;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.view.ActionProvider;
@@ -22,9 +25,11 @@ import com.example.sportfootball.Database.FootballData;
 import com.example.sportfootball.MainContact;
 import com.example.sportfootball.R;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class FavAdapter extends RecyclerView.Adapter<FavAdapter.Holder> {
+ //   private static String BASE_IMAGE_URL = "https:\\/\\/www.thesportsdb.com\\/images\\/media\\/team\\/badge\\/";
     private Context context;
     private List<FootballData> list;
     private MainContact.delete viewDel;
@@ -47,9 +52,11 @@ public class FavAdapter extends RecyclerView.Adapter<FavAdapter.Holder> {
 
     @Override
     public void onBindViewHolder(@NonNull FavAdapter.Holder holder, final int position) {
+
         holder.bind(position);
-//        Glide.with(context).load(list.get(position).getStrTeamBadge())  //PANGGIL GAMBARNYA WOIII
-//                .into(holder.iv_img_club);
+//        Glide.with(context).load(list.get(position).getStrTeamBadge()).into(holder.iv_img_club);
+
+
     }
 
     @Override
@@ -66,7 +73,6 @@ public class FavAdapter extends RecyclerView.Adapter<FavAdapter.Holder> {
         public Holder(@NonNull View itemView) {
             super(itemView);
             //BUAT NGATUR DATA KE TAMPILAN (?)
-            iv_img_club = itemView.findViewById(R.id.fav_club_img);
             tv_name = itemView.findViewById(R.id.fav_club_name);
             tv_country = itemView.findViewById(R.id.fav_club_country);
             tv_formedYear = itemView.findViewById(R.id.fav_club_formed_year);
@@ -78,16 +84,17 @@ public class FavAdapter extends RecyclerView.Adapter<FavAdapter.Holder> {
         }
 
 
-        public void bind(int position) {
+       public void bind(int position) {
             //MENAMPILKAN DATA
             final FootballData footballData = list.get(position);
-            //iv_img_club.setImageURI(footballData.getStrTeamBadge());
+   //        iv_img_club.setImageURI(Uri.parse(BASE_IMAGE_URL + footballData.getStrTeamBadge()));
             tv_name.setText(footballData.getStrTeam());
             tv_country.setText(footballData.getStrCountry());
             tv_formedYear.setText(footballData.getIntFormedYear());
             tv_stadiumName.setText(footballData.getStrStadium());
             tv_stadiumLoc.setText(footballData.getStrStadiumLocation());
             tv_stadiumCap.setText(footballData.getIntStadiumCapacity());
+
             btnDel.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

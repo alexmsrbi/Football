@@ -15,6 +15,9 @@ import com.example.sportfootball.R;
 import com.example.sportfootball.View.Fragment.HomeFragment.Table.MainTable;
 import com.google.android.material.tabs.TabLayout;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -37,7 +40,6 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
 
         myFragment =  inflater.inflate(R.layout.fragment_home, container, false);
 

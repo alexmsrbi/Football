@@ -2,6 +2,8 @@ package com.example.sportfootball.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,11 +24,13 @@ import com.example.sportfootball.Model.ClubModel.TeamsItem;
 import com.example.sportfootball.R;
 import com.example.sportfootball.View.Fragment.ClubFragment.ClubDetail;
 
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 
 public class ClubAdapter extends RecyclerView.Adapter<ClubAdapter.ViewHolder> {
 
-    // private static String BASE_IMAGE_URL = "https:\\/\\/www.thesportsdb.com\\/images\\/media\\/team\\/logo\\/";
+  //  private static String BASE_IMAGE_URL = "https:\\/\\/www.thesportsdb.com\\/images\\/media\\/team\\/logo\\/";
     public Context context;
     AppDatabase appDatabase;
     private ArrayList<TeamsItem> Club = new ArrayList<>();
@@ -100,7 +104,7 @@ public class ClubAdapter extends RecyclerView.Adapter<ClubAdapter.ViewHolder> {
                 @Override
                 public void onClick(View view) {
                     FootballData footballData = new FootballData();
-//                    footballData.setIdTeam(Club.get(position).getIdTeam()); Ga kepake, pake ID database.
+  //                  footballData.setIdTeam(Club.get(position).getIdTeam()); Ga kepake, pake ID database.
                     footballData.setStrTeamBadge(Club.get(position).getStrTeamBadge());
                     footballData.setStrTeam(Club.get(position).getStrTeam());
                     footballData.setStrCountry(Club.get(position).getStrCountry());
