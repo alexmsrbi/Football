@@ -8,7 +8,7 @@ import androidx.room.RoomDatabase;
 import androidx.room.migration.Migration;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
-@Database(entities = {FootballData.class}, version = 1)
+@Database(entities = {FootballData.class,Akun.class}, version = 2)
 public abstract class AppDatabase extends RoomDatabase {
     public abstract FootballDao dao();
 
@@ -17,7 +17,7 @@ public abstract class AppDatabase extends RoomDatabase {
     public static AppDatabase iniDb(Context context) {
         if (appDatabase == null)
             appDatabase = Room.databaseBuilder(context, AppDatabase.class,
-                    "clubDb").allowMainThreadQueries().build();
+                    "clubDb").fallbackToDestructiveMigration().allowMainThreadQueries().build();
         return appDatabase;
     }
 

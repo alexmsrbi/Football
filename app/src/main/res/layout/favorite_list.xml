@@ -139,11 +139,23 @@
             <Button
                 android:id="@+id/btn_remove"
                 android:layout_width="match_parent"
-                android:layout_height="10dp"
+                android:layout_height="20dp"
                 android:layout_marginHorizontal="4dp"
                 android:layout_weight="1"
                 android:backgroundTint="#ffb319"
-                android:text="Remove" />
+                android:text="Remove"
+                android:textSize="12sp"
+                android:textColor="#396BE4"/>
+            <Button
+                android:id="@+id/btn_reminder"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginHorizontal="4dp"
+                android:layout_weight="1"
+                android:backgroundTint="#ffb319"
+                android:text="Setel Pengingat"
+                android:textSize="12sp"
+                android:textColor="#396BE4"/>
 
         </LinearLayout>
 

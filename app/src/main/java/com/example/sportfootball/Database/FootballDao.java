@@ -12,6 +12,16 @@ public interface FootballDao {
     @Insert
     long insertData(FootballData footballData);
 
+    @Insert
+    long daftarAkun(Akun akun);
+
+    @Query("Select * from account where username =:user and password=:pass")
+    Akun[] getDataLogin(String user, String pass);
+
+    @Query("Select * from account where username =:user")
+    Akun[] checkUser(String user);
+    
+
     @Query("SELECT * FROM club_fav")
     List<FootballData> getData();
 

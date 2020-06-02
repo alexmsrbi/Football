@@ -68,7 +68,7 @@ public class FavAdapter extends RecyclerView.Adapter<FavAdapter.Holder> {
         //DEKLARASI VARIABELNYA DULU
         private ImageView iv_img_club;
         private TextView tv_name, tv_country, tv_formedYear, tv_stadiumName, tv_stadiumLoc, tv_stadiumCap;
-        private Button btnView, btnDel;
+        private Button btnRemind, btnDel;
 
         public Holder(@NonNull View itemView) {
             super(itemView);
@@ -79,7 +79,7 @@ public class FavAdapter extends RecyclerView.Adapter<FavAdapter.Holder> {
             tv_stadiumName = itemView.findViewById(R.id.fav_club_stadium);
             tv_stadiumLoc = itemView.findViewById(R.id.fav_club_stadium_loc);
             tv_stadiumCap = itemView.findViewById(R.id.fav_club_stadium_cap);
-            //btnView = itemView.findViewById(R.id.btn_view);
+            btnRemind = itemView.findViewById(R.id.btn_reminder);
             btnDel = itemView.findViewById(R.id.btn_remove);
         }
 
@@ -99,6 +99,12 @@ public class FavAdapter extends RecyclerView.Adapter<FavAdapter.Holder> {
                 @Override
                 public void onClick(View view) {
                     viewDel.deleteData(footballData);
+                }
+            });
+            btnRemind.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
                 }
             });
         }
